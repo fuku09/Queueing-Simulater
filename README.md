@@ -48,6 +48,6 @@ $ python3 [filename].py
 よく調節する値の説明  
 times ... シミュレーション回数  
 arrival_rate ... 到着率(人/時間)  
-service_rate ... サービス率(人/時間)
-ideal_crowd ... 理想の混雑度　　
+service_rate ... サービス率(人/時間)  
+ideal_crowd ... 理想の混雑度  
 arrival_rate ... 実際の店舗の到着率(人/時間)
