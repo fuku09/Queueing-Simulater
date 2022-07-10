@@ -144,15 +144,18 @@ for t in range( 0, times ):
         e = time_conversion(time[i][5])
         w2 = time_conversion(time[i][6])
 
-        #if time[i][7]: # MOかどうか
-        #    print('No{:>2d}   {:>2.0f}:{:>2.0f}:{:>2.0f} '
-        #    '                                                           {:>2.0f}:{:>2.0f}:{:>2.0f}     {:>2.0f}時間{:>2.0f}分{:>2.0f}秒'
-        #    .format(i + 1, a[0] + arrival_hour, a[1], a[2],e[0] + arrival_hour, e[1], e[2], w2[0], w2[1], w2[2]))
+        # シミュレーションの表示部。シミュレーションがどうなっているか見たい際はコメントアウトを外す。
+        """
+        if time[i][7]: # MOかそうでないかで表示形式を変える
+            print('No{:>2d}   {:>2.0f}:{:>2.0f}:{:>2.0f} '
+            '                                                           {:>2.0f}:{:>2.0f}:{:>2.0f}     {:>2.0f}時間{:>2.0f}分{:>2.0f}秒'
+            .format(i + 1, a[0] + arrival_hour, a[1], a[2],e[0] + arrival_hour, e[1], e[2], w2[0], w2[1], w2[2]))
 
-        #else:
-        #    print('No{:>2d}   {:>2.0f}:{:>2.0f}:{:>2.0f}      {:>2.0f}時間{:>2.0f}分{:>2.0f}秒        {:>2.0f}:{:>2.0f}:{:>2.0f}       {:>2.0f}:{:>2.0f}:{:>2.0f}         {:>2.0f}:{:>2.0f}:{:>2.0f}     {:>2.0f}時間{:>2.0f}分{:>2.0f}秒'
-        #    .format( i + 1, a[0] + arrival_hour, a[1], a[2], w[0], w[1], w[2],s[0] + arrival_hour, s[1], s[2], o[0] + arrival_hour, o[1], o[2], e[0] + arrival_hour, e[1], e[2], w2[0],w2[1],w2[2]))
-    
+        else:
+            print('No{:>2d}   {:>2.0f}:{:>2.0f}:{:>2.0f}      {:>2.0f}時間{:>2.0f}分{:>2.0f}秒        {:>2.0f}:{:>2.0f}:{:>2.0f}       {:>2.0f}:{:>2.0f}:{:>2.0f}         {:>2.0f}:{:>2.0f}:{:>2.0f}     {:>2.0f}時間{:>2.0f}分{:>2.0f}秒'
+            .format( i + 1, a[0] + arrival_hour, a[1], a[2], w[0], w[1], w[2],s[0] + arrival_hour, s[1], s[2], o[0] + arrival_hour, o[1], o[2], e[0] + arrival_hour, e[1], e[2], w2[0],w2[1],w2[2]))
+        """
+        
 
 a_w = time_conversion((int)(all_wait / shop_num)) # 全ての客の平均待ち時間
 a_w2 = time_conversion((int)(all_wait2 / shop_num)) # MO無しの利用客の中で会計終了時から受け取り時刻までの待ち時間の平均
