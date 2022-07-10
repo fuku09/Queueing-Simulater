@@ -16,7 +16,7 @@
 を表示する。
 
 ![image_a](image/result1.png)  
-![image_b](image/symbol2.png)  
+![image_b](image/result2.png)  
 
 ## 各ファイル
 ### Queue_simulater.py
